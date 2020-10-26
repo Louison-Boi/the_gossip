@@ -1,0 +1,14 @@
+<h1> Bienvenue sur The Gossip Project</h1>
+
+
+<%= Gossip.count.times do |i| %>
+
+  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= Gossip.find(i+1).title%></h5>
+    <p class="card-text"><%= Gossip.find(i+1).user.first_name %>'s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<%=end %>
